@@ -49,7 +49,24 @@
 - **Backend**: Python FastAPI, SQLAlchemy ORM, Pydantic v2, Direct Bcrypt password hashing, PyJWT, Rate Limiting Middleware.
 - **Database**: SQLite (default local zero-setup) / PostgreSQL compatible.
 - **Testing**: `pytest` backend suite.
-- **Deployment**: Docker, Docker Compose, Nginx.
+- **Deployment**: Vercel Serverless Functions, Docker, Docker Compose, Nginx.
+
+---
+
+## ☁️ Vercel Deployment
+
+CareerPilot AI is ready for instant deployment to **Vercel**!
+
+### Quick Deployment Instructions:
+1. Import your GitHub repository into Vercel.
+2. Add Environment Variables:
+   - `VITE_API_URL`: Your backend URL (if split) or leave empty if deploying mono-project.
+   - `SECRET_KEY`: Custom JWT secret hash.
+   - `GEMINI_API_KEY`: Your Gemini API key.
+   - `DATABASE_URL`: PostgreSQL connection string (Supabase / Neon) for production persistence.
+3. Deploy!
+
+For complete step-by-step instructions, see [docs/VERCEL_DEPLOYMENT.md](file:///C:/Users/LENOVO/.gemini/antigravity/scratch/careerpilot-ai/docs/VERCEL_DEPLOYMENT.md).
 
 ---
 

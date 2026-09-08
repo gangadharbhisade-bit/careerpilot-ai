@@ -1,4 +1,5 @@
-const API_BASE = '/api';
+const customApiUrl = import.meta.env.VITE_API_URL;
+const API_BASE = customApiUrl ? `${customApiUrl.replace(/\/$/, '')}/api` : '/api';
 
 export async function fetchWithAuth(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem('cp_auth_token');

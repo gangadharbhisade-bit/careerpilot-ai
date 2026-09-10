@@ -67,7 +67,7 @@ class ChatMessage(Base):
     session_id = Column(Integer, ForeignKey("chat_sessions.id"), nullable=False)
     sender = Column(String, nullable=False) # "user" or "assistant"
     content = Column(Text, nullable=False)
-    structured_payload = Column(JSON, nullable=True) # JSON payload for rendering roadmaps/cards
+    structured_payload = Column(JSON, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     session = relationship("ChatSession", back_populates="messages")
@@ -79,8 +79,8 @@ class SavedRoadmap(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     target_role = Column(String, nullable=False)
-    duration = Column(String, nullable=False) # e.g. "6-month", "3-month"
-    level = Column(String, nullable=False) # "Beginner", "Intermediate", "Advanced"
+    duration = Column(String, nullable=False)
+    level = Column(String, nullable=False)
     phases_json = Column(JSON, nullable=False)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
@@ -93,9 +93,9 @@ class InterviewSession(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     target_role = Column(String, nullable=False)
-    interview_type = Column(String, nullable=False) # HR, Technical, Coding, Behavioral, System Design
-    status = Column(String, default="in_progress") # in_progress, completed
-    questions_history = Column(JSON, default=list) # [{question, user_answer, score, feedback, suggested_answer}]
+    interview_type = Column(String, nullable=False)
+    status = Column(String, default="in_progress")
+    questions_history = Column(JSON, default=list)
     overall_score = Column(Float, nullable=True)
     overall_feedback = Column(Text, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
@@ -112,7 +112,7 @@ class DailyTask(Base):
     topic = Column(String, nullable=True)
     estimated_minutes = Column(Integer, default=30)
     completed = Column(Boolean, default=False)
-    date_str = Column(String, nullable=False) # "YYYY-MM-DD"
+    date_str = Column(String, nullable=False)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     user = relationship("User", back_populates="daily_tasks")

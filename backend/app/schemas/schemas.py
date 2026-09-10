@@ -77,8 +77,8 @@ class ChatResponse(BaseModel):
 # --- ROADMAP SCHEMAS ---
 class RoadmapRequest(BaseModel):
     target_career: str = "AI Engineer"
-    duration: str = "6-month" # 30-day, 3-month, 6-month, 1-year
-    level: str = "Beginner"   # Beginner, Intermediate, Advanced
+    duration: str = "6-month"
+    level: str = "Beginner"
 
 class WeeklyPlan(BaseModel):
     week: int
@@ -114,7 +114,7 @@ class SkillGapResponse(BaseModel):
     required_skills: List[str]
     missing_skills: List[str]
     readiness_percentage: float
-    priority_order: List[Dict[str, Any]] # {skill, priority, estimated_hours, learning_resource}
+    priority_order: List[Dict[str, Any]]
 
 
 # --- RESUME ANALYSIS SCHEMAS ---
@@ -128,21 +128,21 @@ class ResumeResponse(BaseModel):
     missing_keywords: List[str]
     strengths: List[str]
     improvements: List[str]
-    suggested_bullet_points: List[Dict[str, str]] # {original, improved}
+    suggested_bullet_points: List[Dict[str, str]]
     actionable_next_steps: List[str]
 
 
 # --- INTERVIEW SCHEMAS ---
 class InterviewStartInput(BaseModel):
     target_role: str = "Software Developer"
-    interview_type: str = "Technical" # HR, Technical, Coding, Behavioral, System Design
+    interview_type: str = "Technical"
 
 class InterviewAnswerInput(BaseModel):
     session_id: int
     user_answer: str
 
 class QuestionEvaluation(BaseModel):
-    score: float # 1 to 10
+    score: float
     strengths: List[str]
     weaknesses: List[str]
     improved_answer_sample: str

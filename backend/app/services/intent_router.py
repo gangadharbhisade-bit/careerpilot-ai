@@ -63,13 +63,11 @@ def detect_topic(message: str) -> Optional[str]:
 def detect_target_role(message: str, history: List[Dict[str, Any]] = None, profile: Dict[str, Any] = None) -> Optional[str]:
     msg_lower = message.lower()
     
-    # 1. Highest Priority: Explicit User Prompt Message
     for role, patterns in CAREER_ROLE_PATTERNS.items():
         for pat in patterns:
             if re.search(pat, msg_lower):
                 return role
 
-    # 2. Second Priority: Conversation History Context (Recent 4 messages)
     if history:
         for prev_msg in reversed(history[-4:]):
             content = prev_msg.get("content", "").lower()
@@ -78,7 +76,6 @@ def detect_target_role(message: str, history: List[Dict[str, Any]] = None, profi
                     if re.search(pat, content):
                         return role
 
-    # 3. Lowest Priority: User Profile Target Career (Used only if query mentions no career)
     if profile and profile.get("target_career"):
         return profile.get("target_career")
 
@@ -96,7 +93,6 @@ def extract_comparison_roles(message: str) -> Tuple[str, str]:
     if len(found_roles) >= 2:
         return found_roles[0], found_roles[1]
     elif len(found_roles) == 1:
-        # Default second role for single mention
         if found_roles[0] == "Data Analyst":
             return "Data Analyst", "Data Scientist"
         elif found_roles[0] == "Android Developer":
@@ -108,52 +104,40 @@ def extract_comparison_roles(message: str) -> Tuple[str, str]:
 def classify_intent(message: str, history: List[Dict[str, Any]] = None, profile: Dict[str, Any] = None) -> str:
     msg_lower = message.lower()
     
-    # Career Comparison
     if any(k in msg_lower for k in [" vs ", "versus", "difference", "compare", "dono me kya farak", "farak kya", "farak hai"]):
         return IntentType.CAREER_COMPARISON
 
-    # Resume Guidance
     if any(k in msg_lower for k in ["resume", "cv", "ats", "bullet point"]):
         return IntentType.RESUME
 
-    # Interview Preparation
     if any(k in msg_lower for k in ["interview", "mock interview", "hr round", "technical round", "coding round"]):
         return IntentType.INTERVIEW_PREPARATION
 
-    # Learning Resources & Courses (including "Python free me kaise sikhe?")
-    if any(k in msg_lower for k in ["free", "course", "courses", "resources", "tutorial", "books", "kaha se seekhu", "kaise sikhe", "kaise seekhu", "kaise sikho", "where to learn", "seekhne ke liye"]):
+    if any(k in msg_lower for k in ["free", "course", "courses", "resources", "tutorial", "books", "kaha se seekhu", "kaise sikhe", "kaise seekhu", "kaise seekho", "where to learn", "seekhne ke liye"]):
         if any(c in msg_lower for c in ["free", "free me", "batao", "resources", "course", "courses", "kaise sikhe", "kaha से"]):
             return IntentType.FREE_RESOURCES if "free" in msg_lower else IntentType.LEARNING_RESOURCES
 
-    # Companies
     if any(k in msg_lower for k in ["google", "microsoft", "amazon", "company", "companies", "tcs", "infosys", "konse company"]):
         return IntentType.COMPANIES
 
-    # Job & Internship Search
     if any(k in msg_lower for k in ["job", "jobs", "internship", "internships", "apply", "kaha apply", "where to apply", "hiring", "fresher job"]):
         return IntentType.JOB_SEARCH
 
-    # Portfolio Projects
     if any(k in msg_lower for k in ["project", "projects", "portfolio", "kya banau", "what to build"]):
         return IntentType.PROJECTS
 
-    # Skill Advice ("Python me next kya sikhu?", "Python aata hai ab kya seekhu?")
     if any(k in msg_lower for k in ["aata hai", "know python", "know sql", "ab kya", "after learning", "next step", "what to learn next", "ab mujhe kya", "next kya", "kya sikhu", "kya seekhu", "sikhu", "seekhu"]):
         return IntentType.SKILL_ADVICE
 
-    # Career Selection / Confused
     if any(k in msg_lower for k in ["confused", "which career", "konse career", "kaunsi career", "suitable for me", "decide", "kya karu"]):
         return IntentType.CAREER_SELECTION
 
-    # Roadmap
     if any(k in msg_lower for k in ["roadmap", "roadmap do", "kaise bane", "how to become", "steps to become", "6 month", "30 day", "path", "start karu", "kaise start"]):
         return IntentType.ROADMAP
 
-    # Salary Information
     if any(k in msg_lower for k in ["salary", "pay", "ctc", "package", "earnings"]):
         return IntentType.SALARY_INFORMATION
 
-    # Casual / Greeting
     if any(k in msg_lower for k in ["hi", "hello", "hey", "thanks", "thank you", "kaise ho", "who are you"]):
         return IntentType.CASUAL_CONVERSATION
 

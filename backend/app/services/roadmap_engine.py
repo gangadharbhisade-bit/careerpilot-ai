@@ -15,7 +15,7 @@ CAREER_CURRICULUM_TEMPLATES = {
                 "weekly_breakdown": [
                     {"week": 1, "title": "Kotlin Core Syntax & Variables", "topics": ["Variables", "Val vs Var", "Data Types", "Conditionals", "Functions"], "practice": "Build a CLI Math & String utility in Kotlin"},
                     {"week": 2, "title": "Object-Oriented Kotlin & Classes", "topics": ["Classes", "Constructors", "Inheritance", "Interfaces", "Data Classes"], "practice": "Create an OOP Student Management script"},
-                    {"week": 3, "title": "Kotlin Collections & Functional Ops", "topics": ["Lists", "Maps", "Sets", "Filter", "Map", "Reduce", "Null Safety (?. ?: !!)"], "practice": "Build an in-memory inventory parser"},
+                    {"week": 3, "title": "Kotlin Collections & Functional Ops", "topics": ["Lists", "Maps", "Sets", "Filter", "Map", "Reduce", "Null Safety"], "practice": "Build an in-memory inventory parser"},
                     {"week": 4, "title": "Coroutines Basics & Git Basics", "topics": ["Asynchronous Programming", "Dispatchers", "Git Branching", "Pull Requests"], "practice": "Solve 10 Kotlin coding challenges on HackerRank"}
                 ],
                 "milestone_project": "Custom Kotlin Algorithmic Problem Suite & CLI Application",
@@ -26,19 +26,18 @@ CAREER_CURRICULUM_TEMPLATES = {
             },
             {
                 "phase_number": 2,
-                "phase_title": "Android Studio & UI Development",
+                "phase_title": "Android Studio & Jetpack Compose UI",
                 "duration_weeks": 4,
                 "skills_covered": ["Android Studio IDE", "Jetpack Compose", "Layouts & Modifiers", "State Management", "Material Design 3"],
                 "weekly_breakdown": [
-                    {"week": 5, "title": "Android Studio Setup & Compose Basics", "topics": ["Project Anatomy", "Composable Functions", "Preview Tool", "Text", "Button", "Image"], "practice": "Build a Business Card App"},
-                    {"week": 6, "title": "Compose Layouts & Modifiers", "topics": ["Column", "Row", "Box", "LazyColumn (Lists)", "Padding", "Alignment"], "practice": "Build a scrollable Recipe List App"},
+                    {"week": 5, "title": "Android Studio Setup & Compose Basics", "topics": ["Project Anatomy", "Composable Functions", "Preview Tool", "Text", "Button"], "practice": "Build a Business Card App"},
+                    {"week": 6, "title": "Compose Layouts & Modifiers", "topics": ["Column", "Row", "Box", "LazyColumn", "Padding", "Alignment"], "practice": "Build a scrollable Recipe List App"},
                     {"week": 7, "title": "State Management in Compose", "topics": ["remember", "mutableStateOf", "State Hoisting", "Recomposition"], "practice": "Build an interactive Counter & Tip Calculator App"},
                     {"week": 8, "title": "Material Design 3 & Theming", "topics": ["Color Schemes", "Typography", "Cards", "TopAppBar", "BottomNavigation"], "practice": "Style a modern Shopping Cart UI"}
                 ],
                 "milestone_project": "Interactive Task Manager App with Jetpack Compose & Material 3",
                 "learning_resources": [
-                    {"title": "Android Jetpack Compose Docs", "url": "https://developer.android.com/jetpack/compose", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "Google Android Compose Pathway", "url": "https://developer.android.com/courses/pathways/compose", "type": "COURSE", "badge": "FREE"}
+                    {"title": "Android Jetpack Compose Docs", "url": "https://developer.android.com/jetpack/compose", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
@@ -54,19 +53,18 @@ CAREER_CURRICULUM_TEMPLATES = {
                 ],
                 "milestone_project": "Full MVVM News & Weather App with Offline Room Caching & REST API",
                 "learning_resources": [
-                    {"title": "Retrofit Documentation", "url": "https://square.github.io/retrofit/", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "Room DB Guide", "url": "https://developer.android.com/training/data-storage/room", "type": "DOCUMENTATION", "badge": "FREE"}
+                    {"title": "Retrofit Documentation", "url": "https://square.github.io/retrofit/", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
                 "phase_number": 4,
                 "phase_title": "Advanced Android Architecture & Testing",
                 "duration_weeks": 4,
-                "skills_covered": ["Hilt / Dagger DI", "WorkManager", "Unit Testing", "UI Testing (Espresso/Compose Test)", "Clean Architecture"],
+                "skills_covered": ["Hilt Dependency Injection", "WorkManager", "Unit Testing", "Compose Testing", "Clean Architecture"],
                 "weekly_breakdown": [
                     {"week": 13, "title": "Dependency Injection with Hilt", "topics": ["@HiltAndroidApp", "@Inject", "Modules", "@Provides", "@Singleton"], "practice": "Inject Retrofit & Room DB using Hilt"},
                     {"week": 14, "title": "Background Tasks & WorkManager", "topics": ["OneTimeWorkRequest", "PeriodicWorkRequest", "Constraints", "Notifications"], "practice": "Schedule daily notification updates"},
-                    {"week": 15, "title": "Unit Testing & MockK", "topics": ["JUnit 5", "MockK", "Testing ViewModels", "Testing Repositories"], "practice": "Write 80%+ coverage unit tests for ViewModels"},
+                    {"week": 15, "title": "Unit Testing & MockK", "topics": ["JUnit 5", "MockK", "Testing ViewModels", "Testing Repositories"], "practice": "Write unit tests for ViewModels"},
                     {"week": 16, "title": "Clean Architecture & Modularization", "topics": ["Domain Layer", "Use Cases", "Data Layer", "Presentation Layer"], "practice": "Structure project into Multi-module Clean Architecture"}
                 ],
                 "milestone_project": "Production-Grade E-Commerce Android App with Hilt, MVVM & Unit Tests",
@@ -78,12 +76,12 @@ CAREER_CURRICULUM_TEMPLATES = {
                 "phase_number": 5,
                 "phase_title": "App Deployment, Portfolio & Job Preparation",
                 "duration_weeks": 4,
-                "skills_covered": ["Google Play Console", "App Signing (Keystore)", "ProGuard/R8", "GitHub Portfolio", "Android Interview Prep"],
+                "skills_covered": ["Google Play Console", "App Signing", "ProGuard/R8", "GitHub Portfolio", "Android Interview Prep"],
                 "weekly_breakdown": [
-                    {"week": 17, "title": "App Optimization & Security", "topics": ["ProGuard Rules", "Obfuscation", "Memory Leaks (LeakCanary)", "App Bundle (.aab)"], "practice": "Generate signed release APK & AAB bundle"},
-                    {"week": 18, "title": "Play Store Submission", "topics": ["Play Console Setup", "Privacy Policy", "Store Listings", "Screenshots & Graphic Assets"], "practice": "Publish app to Google Play Store / Internal Testing"},
+                    {"week": 17, "title": "App Optimization & Security", "topics": ["ProGuard Rules", "Obfuscation", "Memory Leaks", "App Bundle (.aab)"], "practice": "Generate signed release APK & AAB bundle"},
+                    {"week": 18, "title": "Play Store Submission", "topics": ["Play Console Setup", "Privacy Policy", "Store Listings", "Screenshots"], "practice": "Publish app to Google Play Store / Internal Testing"},
                     {"week": 19, "title": "GitHub Portfolio & Resume Tuning", "topics": ["Project READMEs", "Architecture Diagrams", "Quantified Achievements"], "practice": "Build impressive GitHub Android showcase"},
-                    {"week": 20, "title": "Android Interview Preparation", "topics": ["Android Internal Questions", "Lifecycle edge cases", "Coroutines vs Threads", "Mock Interviews"], "practice": "Complete 3 mock technical interviews"}
+                    {"week": 20, "title": "Android Interview Preparation", "topics": ["Android Internal Questions", "Lifecycle edge cases", "Coroutines vs Threads"], "practice": "Complete 3 mock technical interviews"}
                 ],
                 "milestone_project": "Published Play Store App & Interactive GitHub Android Portfolio",
                 "learning_resources": [
@@ -111,8 +109,7 @@ CAREER_CURRICULUM_TEMPLATES = {
                 ],
                 "milestone_project": "Interactive Excel Financial & Sales Performance Dashboard",
                 "learning_resources": [
-                    {"title": "Microsoft Excel Learning Hub", "url": "https://support.microsoft.com/en-us/excel", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "Khan Academy Statistics", "url": "https://www.khanacademy.org/math/statistics-probability", "type": "COURSE", "badge": "FREE"}
+                    {"title": "Microsoft Excel Learning Hub", "url": "https://support.microsoft.com/en-us/excel", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
@@ -121,15 +118,14 @@ CAREER_CURRICULUM_TEMPLATES = {
                 "duration_weeks": 4,
                 "skills_covered": ["SQL Queries", "JOINs (Inner, Left, Outer)", "GROUP BY & Aggregations", "Subqueries & CTEs", "Window Functions"],
                 "weekly_breakdown": [
-                    {"week": 5, "title": "SQL Core Syntax & Filtering", "topics": ["SELECT", "WHERE", "ORDER BY", "LIKE", "IN", "BETWEEN", "GROUP BY", "HAVING"], "practice": "Solve 15 SQL query exercises on LeetCode/Mode"},
-                    {"week": 6, "title": "Database JOINs & Entity Relationships", "topics": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "Self JOINs", "Foreign Keys"], "practice": "Join customer, order, and product tables"},
+                    {"week": 5, "title": "SQL Core Syntax & Filtering", "topics": ["SELECT", "WHERE", "ORDER BY", "LIKE", "GROUP BY", "HAVING"], "practice": "Solve 15 SQL query exercises on LeetCode/Mode"},
+                    {"week": 6, "title": "Database JOINs & Relationships", "topics": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "Self JOINs"], "practice": "Join customer, order, and product tables"},
                     {"week": 7, "title": "Subqueries & Common Table Expressions (CTEs)", "topics": ["Nested Queries", "WITH Clause (CTEs)", "Temporary Tables"], "practice": "Build multi-step analytical queries"},
                     {"week": 8, "title": "Advanced SQL Window Functions", "topics": ["ROW_NUMBER()", "RANK()", "DENSE_RANK()", "LEAD()", "LAG()", "Running Totals"], "practice": "Compute month-over-month revenue growth"}
                 ],
                 "milestone_project": "Complex E-Commerce SQL Analytics Query Suite & Report",
                 "learning_resources": [
-                    {"title": "Mode Analytics SQL Tutorial", "url": "https://mode.com/sql-tutorial/", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "PostgreSQL Tutorial", "url": "https://www.postgresqltutorial.com/", "type": "DOCUMENTATION", "badge": "FREE"}
+                    {"title": "Mode Analytics SQL Tutorial", "url": "https://mode.com/sql-tutorial/", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
@@ -145,8 +141,7 @@ CAREER_CURRICULUM_TEMPLATES = {
                 ],
                 "milestone_project": "Exploratory Data Analysis (EDA) Jupyter Notebook on Real Dataset",
                 "learning_resources": [
-                    {"title": "Pandas Official Documentation", "url": "https://pandas.pydata.org/docs/", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "Kaggle Pandas Course", "url": "https://www.kaggle.com/learn/pandas", "type": "COURSE", "badge": "FREE"}
+                    {"title": "Pandas Official Documentation", "url": "https://pandas.pydata.org/docs/", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
@@ -156,8 +151,8 @@ CAREER_CURRICULUM_TEMPLATES = {
                 "skills_covered": ["Power BI / Tableau", "Data Modeling", "DAX Formulas", "Interactive Reports", "Storytelling with Data"],
                 "weekly_breakdown": [
                     {"week": 13, "title": "Power BI Setup & Power Query", "topics": ["Connecting Data Sources", "Power Query ETL", "Data Transformations"], "practice": "Import SQL & Excel data into Power BI"},
-                    {"week": 14, "title": "Data Modeling & DAX Syntax", "topics": ["Star Schema", "Relationships", "DAX Measures (CALCULATE, SUMX, ALL)"], "practice": "Create DAX measure suite for sales metrics"},
-                    {"week": 15, "title": "Dashboard Design & Interactivity", "topics": ["Visual Cards", "Bar Charts", "Bookmarks", "Drill-through", "Filters"], "practice": "Build executive interactive dashboard"},
+                    {"week": 14, "title": "Data Modeling & DAX Syntax", "topics": ["Star Schema", "Relationships", "DAX Measures (CALCULATE, SUMX)"], "practice": "Create DAX measure suite for sales metrics"},
+                    {"week": 15, "title": "Dashboard Design & Interactivity", "topics": ["Visual Cards", "Bar Charts", "Bookmarks", "Drill-through"], "practice": "Build executive interactive dashboard"},
                     {"week": 16, "title": "Business Storytelling & Presentations", "topics": ["Insight Synthesis", "Stakeholder Communication", "Slide Decks"], "practice": "Present 5-minute data story to stakeholders"}
                 ],
                 "milestone_project": "End-to-End Power BI / Tableau Corporate Executive Dashboard",
@@ -183,188 +178,8 @@ CAREER_CURRICULUM_TEMPLATES = {
             }
         ]
     },
-    "Cybersecurity Engineer": {
-        "description": "Master Computer Networking (TCP/IP), Linux Administration, Security Fundamentals, Cryptography, Web Security (OWASP Top 10), SIEM Log Analysis, Vulnerability Assessment, and Ethical Hacking.",
-        "prerequisites": "Basic computer operating system literacy",
-        "weekly_hours": "10 - 15 hrs / week",
-        "career_outcomes": ["Cybersecurity Engineer", "Security Analyst", "SOC Analyst", "Penetration Tester"],
-        "phases": [
-            {
-                "phase_number": 1,
-                "phase_title": "Networking & Systems Foundations",
-                "duration_weeks": 4,
-                "skills_covered": ["TCP/IP Stack", "OSI Model", "DNS & DHCP", "Wireshark", "Linux CLI & Bash Scripting"],
-                "weekly_breakdown": [
-                    {"week": 1, "title": "Computer Networking Core", "topics": ["OSI 7 Layers", "TCP/UDP", "IP Addressing & Subnetting", "DNS", "DHCP"], "practice": "Capture & analyze network packets using Wireshark"},
-                    {"week": 2, "title": "Linux Systems Administration", "topics": ["Linux Terminal CLI", "File Permissions (chmod/chown)", "User Management", "Systemd"], "practice": "Set up a Linux server VM in VirtualBox"},
-                    {"week": 3, "title": "Bash & Python Scripting for Security", "topics": ["Bash Shell Scripts", "Automation", "Python Sockets", "File Parsing"], "practice": "Write a custom Python Port Scanner script"},
-                    {"week": 4, "title": "Network Utilities & Scanning", "topics": ["Nmap", "Netcat", "Ping", "Traceroute", "SSH Security"], "practice": "Scan home network lab using Nmap"}
-                ],
-                "milestone_project": "Custom Python Network Scanner & Wireshark Log Analysis Suite",
-                "learning_resources": [
-                    {"title": "Cisco Networking Academy", "url": "https://www.netacad.com/", "type": "COURSE", "badge": "FREE"},
-                    {"title": "Linux Journey", "url": "https://linuxjourney.com/", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 2,
-                "phase_title": "Security Fundamentals & Cryptography",
-                "duration_weeks": 4,
-                "skills_covered": ["Symmetric/Asymmetric Encryption", "Hashing (SHA/MD5)", "Public Key Infrastructure (PKI)", "TLS/SSL", "IAM"],
-                "weekly_breakdown": [
-                    {"week": 5, "title": "Cryptography Principles", "topics": ["AES", "RSA", "Hashing vs Encryption", "Salting", "HMAC"], "practice": "Encrypt files using OpenSSL CLI"},
-                    {"week": 6, "title": "PKI & Digital Certificates", "topics": ["Certificate Authorities", "X.509 Certificates", "SSL/TLS Handshake", "HTTPS"], "practice": "Set up SSL/TLS certificate on Nginx server"},
-                    {"week": 7, "title": "Identity & Access Management (IAM)", "topics": ["Authentication vs Authorization", "MFA", "OAuth 2.0", "Active Directory Basics"], "practice": "Configure IAM roles & permissions lab"},
-                    {"week": 8, "title": "Security Policies & Risk Assessment", "topics": ["CIA Triad", "Threat Vectors", "Risk Mitigation", "Security Controls"], "practice": "Draft a Corporate Security Policy document"}
-                ],
-                "milestone_project": "Enterprise PKI Certificate & Cryptographic Security Lab Setup",
-                "learning_resources": [
-                    {"title": "Coursera Cryptography Course", "url": "https://www.coursera.org/", "type": "COURSE", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 3,
-                "phase_title": "Web Security & OWASP Top 10",
-                "duration_weeks": 4,
-                "skills_covered": ["OWASP Top 10", "SQL Injection (SQLi)", "Cross-Site Scripting (XSS)", "CSRF", "Burp Suite"],
-                "weekly_breakdown": [
-                    {"week": 9, "title": "Web Architecture & Burp Suite", "topics": ["HTTP Request/Response", "Burp Suite Proxy", "Intercepting Traffic"], "practice": "Set up Burp Suite Proxy and inspect browser requests"},
-                    {"week": 10, "title": "SQL Injection & Database Attacks", "topics": ["Inband SQLi", "Blind SQLi", "SQLMap tool", "Parameterized Queries"], "practice": "Exploit SQLi vulnerabilities in DVWA lab"},
-                    {"week": 11, "title": "Cross-Site Scripting (XSS) & CSRF", "topics": ["Reflected XSS", "Stored XSS", "DOM XSS", "CSRF Tokens", "Content Security Policy"], "practice": "Complete PortSwigger Web Security Academy XSS labs"},
-                    {"week": 12, "title": "Authentication & Session Flaws", "topics": ["Session Hijacking", "Cookie Security", "Broken Access Control"], "practice": "Audit vulnerable web application for access control bugs"}
-                ],
-                "milestone_project": "PortSwigger Web Security Academy Labs Completion & Audit Report",
-                "learning_resources": [
-                    {"title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "type": "PRACTICE", "badge": "FREE"},
-                    {"title": "OWASP Top 10 Documentation", "url": "https://owasp.org/www-project-top-ten/", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 4,
-                "phase_title": "SOC Analysis, SIEM & Threat Hunting",
-                "duration_weeks": 4,
-                "skills_covered": ["SIEM (Splunk / Elastic)", "Log Analysis", "Incident Response", "Snort / Suricata IDS", "Threat Intelligence"],
-                "weekly_breakdown": [
-                    {"week": 13, "title": "SIEM Fundamentals with Splunk", "topics": ["Log Ingestion", "SPL Queries", "Dashboards", "Alerting Rules"], "practice": "Analyze Windows Event Logs in Splunk"},
-                    {"week": 14, "title": "Network Intrusion Detection (IDS/IPS)", "topics": ["Snort Rules", "Suricata", "Packet Inspection", "Signatures"], "practice": "Write custom Snort rules to detect attack patterns"},
-                    {"week": 15, "title": "Incident Response Lifecycle", "topics": ["NIST Framework", "Preparation", "Detection", "Containment", "Eradication"], "practice": "Conduct simulated incident response exercise"},
-                    {"week": 16, "title": "TryHackMe Security Labs", "topics": ["SOC Level 1 Pathway", "Malware Analysis Basics", "Memory Forensics (Volatility)"], "practice": "Complete TryHackMe SOC Analyst Room"}
-                ],
-                "milestone_project": "Deployed Splunk SIEM & Intrusion Detection Threat Hunting Lab",
-                "learning_resources": [
-                    {"title": "TryHackMe Cyber Security", "url": "https://tryhackme.com/", "type": "PRACTICE", "badge": "FREE"},
-                    {"title": "Splunk Fundamentals", "url": "https://www.splunk.com/", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 5,
-                "phase_title": "Certifications, Portfolio & Career Preparation",
-                "duration_weeks": 4,
-                "skills_covered": ["CompTIA Security+", "EJPT / CEH Prep", "Security Audit Reports", "Cybersecurity Interviews"],
-                "weekly_breakdown": [
-                    {"week": 17, "title": "Security+ / eJPT Exam Prep", "topics": ["Domain Review", "Practice Exams", "Lab Challenges"], "practice": "Complete 3 full-length Security+ mock exams"},
-                    {"week": 18, "title": "Vulnerability Assessment Reporting", "topics": ["CVSS Scoring", "Executive Summaries", "Remediation Steps"], "practice": "Write a professional Vulnerability Audit Report"},
-                    {"week": 19, "title": "GitHub & HackTheBox Profile Setup", "topics": ["Publishing Security Tools", "Documenting Write-ups"], "practice": "Publish 5 CTF write-ups on GitHub"},
-                    {"week": 20, "title": "Cybersecurity Interview Preparation", "topics": ["Technical Scenarios", "Network Troubleshooting", "Behavioral Rounds"], "practice": "Complete 3 mock security engineer interviews"}
-                ],
-                "milestone_project": "Published Security Audit Portfolio & Certified Resume",
-                "learning_resources": [
-                    {"title": "Hack The Box", "url": "https://www.hackthebox.com/", "type": "PRACTICE", "badge": "FREE"}
-                ]
-            }
-        ]
-    },
-    "Frontend Developer": {
-        "description": "Master HTML5, Modern CSS (Flexbox/Grid/Tailwind), JavaScript ES6+, TypeScript, React 18+, State Management, REST API Consumption, Web Performance, and Responsive UI Design.",
-        "prerequisites": "Basic computer & web browser literacy",
-        "weekly_hours": "8 - 12 hrs / week",
-        "career_outcomes": ["Frontend Developer", "React Engineer", "UI Engineer"],
-        "phases": [
-            {
-                "phase_number": 1,
-                "phase_title": "HTML5, Modern CSS & Tailwind CSS",
-                "duration_weeks": 4,
-                "skills_covered": ["Semantic HTML5", "CSS Flexbox", "CSS Grid", "Tailwind CSS", "Responsive Design"],
-                "weekly_breakdown": [
-                    {"week": 1, "title": "Semantic HTML5 & Accessibility", "topics": ["HTML Elements", "Forms", "A11y", "ARIA Attributes", "SEO Meta Tags"], "practice": "Build an accessible multi-page personal website"},
-                    {"week": 2, "title": "CSS Layouts: Flexbox & Grid", "topics": ["Box Model", "Flexbox", "CSS Grid", "Media Queries", "Positioning"], "practice": "Style a responsive 3-column landing page"},
-                    {"week": 3, "title": "Tailwind CSS Utility Design", "topics": ["Tailwind Setup", "Utility Classes", "Custom Config", "Dark Mode"], "practice": "Recreate a sleek Glassmorphic UI layout with Tailwind"},
-                    {"week": 4, "title": "CSS Animations & Transitions", "topics": ["Keyframes", "Transforms", "Transitions", "Hover States"], "practice": "Build animated component cards"}
-                ],
-                "milestone_project": "Responsive Multi-Page SaaS Landing Page with Tailwind CSS",
-                "learning_resources": [
-                    {"title": "MDN Web Docs - HTML & CSS", "url": "https://developer.mozilla.org/", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "freeCodeCamp Responsive Web Design", "url": "https://www.freecodecamp.org/", "type": "COURSE", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 2,
-                "phase_title": "JavaScript ES6+ & DOM Manipulation",
-                "duration_weeks": 4,
-                "skills_covered": ["JavaScript Fundamentals", "DOM API", "Event Handling", "Async/Await & Fetch", "ES6 Modules"],
-                "weekly_breakdown": [
-                    {"week": 5, "title": "JavaScript Core Concepts", "topics": ["Variables (const/let)", "Data Types", "Functions", "Scope", "Closures"], "practice": "Build a JS Calculator & Quiz App"},
-                    {"week": 6, "title": "DOM Manipulation & Events", "topics": ["querySelector", "createElement", "addEventListener", "Event Delegation"], "practice": "Build a dynamic To-Do App with LocalStorage"},
-                    {"week": 7, "title": "Async JavaScript & Fetch API", "topics": ["Promises", "Async/Await", "Fetch API", "Handling HTTP Errors"], "practice": "Fetch & render live weather data from OpenWeather API"},
-                    {"week": 8, "title": "ES6+ Modules & Data Structures", "topics": ["Destructuring", "Spread Operator", "Array Methods (map/filter/reduce)", "Modules"], "practice": "Build an e-commerce product filter script"}
-                ],
-                "milestone_project": "Interactive Weather & Movie Search Web App in Vanilla JS",
-                "learning_resources": [
-                    {"title": "JavaScript.info", "url": "https://javascript.info/", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 3,
-                "phase_title": "React 18, TypeScript & Component Architecture",
-                "duration_weeks": 4,
-                "skills_covered": ["React 18", "JSX", "Hooks (useState, useEffect, useRef)", "TypeScript", "React Router v6"],
-                "weekly_breakdown": [
-                    {"week": 9, "title": "React Core & JSX", "topics": ["Components", "Props", "JSX Syntax", "Rendering Lists"], "practice": "Build a React Expense Tracker App"},
-                    {"week": 10, "title": "React Hooks & Lifecycle", "topics": ["useState", "useEffect", "useRef", "Custom Hooks"], "practice": "Build a custom auto-saving form hook"},
-                    {"week": 11, "title": "TypeScript Integration", "topics": ["Interfaces", "Types", "React Prop Types", "Generic Types"], "practice": "Migrate React Expense Tracker to TypeScript"},
-                    {"week": 12, "title": "Routing with React Router v6", "topics": ["BrowserRouter", "Routes", "Route", "Link", "Params & Query Strings"], "practice": "Build a multi-view E-Commerce UI"}
-                ],
-                "milestone_project": "TypeScript + React E-Commerce Storefront with Shopping Cart",
-                "learning_resources": [
-                    {"title": "React Official Documentation", "url": "https://react.dev/", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 4,
-                "phase_title": "State Management, Testing & Web Performance",
-                "duration_weeks": 4,
-                "skills_covered": ["Redux Toolkit / Context API", "Vitest & React Testing Library", "Web Vitals", "Code Splitting", "Git Workflow"],
-                "weekly_breakdown": [
-                    {"week": 13, "title": "Global State Management", "topics": ["Context API", "Redux Toolkit", "createSlice", "useSelector/useDispatch"], "practice": "Manage global user session & cart state"},
-                    {"week": 14, "title": "Component Testing", "topics": ["Vitest", "React Testing Library", "Mocking API Requests"], "practice": "Write unit tests for UI components"},
-                    {"week": 15, "title": "Web Performance & Optimization", "topics": ["React.memo", "useMemo", "useCallback", "Lazy Loading & Suspense", "Lighthouse"], "practice": "Optimize page speed score to 90+"},
-                    {"week": 16, "title": "Vite Build & Deployment", "topics": ["Vite Config", "Vercel / Netlify Deployment", "CI/CD GitHub Actions"], "practice": "Deploy live React app to Vercel"}
-                ],
-                "milestone_project": "Production-Grade React + TypeScript SaaS Application Deployed on Vercel",
-                "learning_resources": [
-                    {"title": "Vercel Deployment Docs", "url": "https://vercel.com/docs", "type": "DOCUMENTATION", "badge": "FREE"}
-                ]
-            },
-            {
-                "phase_number": 5,
-                "phase_title": "Portfolio, Interview Prep & Job Applications",
-                "duration_weeks": 4,
-                "skills_covered": ["GitHub Portfolio", "Frontend System Design", "Coding Challenges", "Resume Optimization"],
-                "weekly_breakdown": [
-                    {"week": 17, "title": "GitHub Portfolio Showcase", "topics": ["Clean Code", "Project READMEs", "Live Demos"], "practice": "Polish top 3 GitHub frontend projects"},
-                    {"week": 18, "title": "Frontend Interview Coding", "topics": ["JS Polyfills", "Debounce/Throttle", "DOM Tree Operations"], "practice": "Implement Debounce & Event Emitter from scratch"},
-                    {"week": 19, "title": "Frontend System Design", "topics": ["Component Design", "State Architecture", "Caching Strategies"], "practice": "Design infinite scroll newsfeed architecture"},
-                    {"week": 20, "title": "Job Applications & Mock Interviews", "topics": ["LinkedIn Jobs", "Wellfound", "Mock Technical Interviews"], "practice": "Complete 3 mock frontend technical interviews"}
-                ],
-                "milestone_project": "Deploved Personal Portfolio Website & Interview Ready Resume",
-                "learning_resources": [
-                    {"title": "GreatFrontEnd Interview Guide", "url": "https://www.greatfrontend.com/", "type": "PRACTICE", "badge": "FREE"}
-                ]
-            }
-        ]
-    },
     "AI Engineer": {
-        "description": "Master Python, Mathematics for AI, Machine Learning (Scikit-Learn), Deep Learning (PyTorch / TensorFlow), Large Language Models (LLMs), LangChain, Vector DBs, and MLOps.",
+        "description": "Master Python, Mathematics for AI, Machine Learning (Scikit-Learn), Deep Learning (PyTorch), Large Language Models (LLMs), LangChain, Vector DBs, and MLOps.",
         "prerequisites": "Basic Python programming logic",
         "weekly_hours": "12 - 16 hrs / week",
         "career_outcomes": ["AI Engineer", "ML Engineer", "LLM Specialist", "AI Solutions Architect"],
@@ -452,12 +267,186 @@ CAREER_CURRICULUM_TEMPLATES = {
                 ]
             }
         ]
+    },
+    "Frontend Developer": {
+        "description": "Master HTML5, CSS3, Modern JavaScript (ES6+), TypeScript, React 18, Tailwind CSS, Next.js, and Web Performance Optimization.",
+        "prerequisites": "Basic computer operation & web browsing awareness",
+        "weekly_hours": "10 - 15 hrs / week",
+        "career_outcomes": ["Frontend Developer", "React Engineer", "UI Engineer", "Full Stack Developer"],
+        "phases": [
+            {
+                "phase_number": 1,
+                "phase_title": "Web Foundations & Responsive Design",
+                "duration_weeks": 4,
+                "skills_covered": ["HTML5 & CSS3", "Flexbox & Grid", "Responsive Design", "Git & GitHub", "Web Standards"],
+                "weekly_breakdown": [
+                    {"week": 1, "title": "HTML5 Semantic Markup", "topics": ["Semantic elements", "Forms & Validation", "Accessibility (a11y)"], "practice": "Build accessible portfolio skeleton"},
+                    {"week": 2, "title": "CSS3 Layouts & Styling", "topics": ["Box Model", "Flexbox", "CSS Grid", "Animations"], "practice": "Build responsive landing page layout"},
+                    {"week": 3, "title": "Modern CSS & Utility Frameworks", "topics": ["CSS Variables", "Tailwind CSS", "Sass/SCSS"], "practice": "Recreate popular website UI with Tailwind"},
+                    {"week": 4, "title": "Git & Web Deployment", "topics": ["Git workflow", "GitHub Pages", "Vercel Deployment"], "practice": "Deploy responsive website live"}
+                ],
+                "milestone_project": "Responsive Corporate Portfolio Landing Page deployed on Vercel",
+                "learning_resources": [
+                    {"title": "MDN Web Docs HTML/CSS", "url": "https://developer.mozilla.org/en-US/docs/Learn", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 2,
+                "phase_title": "Modern JavaScript & TypeScript",
+                "duration_weeks": 4,
+                "skills_covered": ["JavaScript ES6+", "TypeScript", "DOM Manipulation", "Async/Await", "Fetch & REST APIs"],
+                "weekly_breakdown": [
+                    {"week": 5, "title": "JS Data Structures & Control Flow", "topics": ["Arrays", "Objects", "Arrow Functions", "Array Methods"], "practice": "Build an interactive Todo application"},
+                    {"week": 6, "title": "Async JS & Promises", "topics": ["Event Loop", "Promises", "Async/Await", "Fetch API"], "practice": "Build Weather Dashboard using public REST API"},
+                    {"week": 7, "title": "TypeScript Fundamentals", "topics": ["Types", "Interfaces", "Generics", "Type Assertions"], "practice": "Convert JS app to TypeScript"},
+                    {"week": 8, "title": "DOM & Event Handling", "topics": ["Event Bubbling", "Local Storage", "Form Data"], "practice": "Build interactive Quiz Application"}
+                ],
+                "milestone_project": "Dynamic API-Driven Dashboard in Pure TypeScript & Fetch API",
+                "learning_resources": [
+                    {"title": "JavaScript.info", "url": "https://javascript.info/", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 3,
+                "phase_title": "React 18 & Component Engineering",
+                "duration_weeks": 4,
+                "skills_covered": ["React 18", "JSX Syntax", "Hooks (useState, useEffect, useMemo)", "Zustand State", "React Router"],
+                "weekly_breakdown": [
+                    {"week": 9, "title": "React Core & Component Architecture", "topics": ["JSX", "Props & State", "Component Lifecycle", "Conditional Rendering"], "practice": "Build E-Commerce product catalog"},
+                    {"week": 10, "title": "React Hooks & Customs Hooks", "topics": ["useEffect", "useRef", "useMemo", "Custom Hooks"], "practice": "Build custom API fetching hook"},
+                    {"week": 11, "title": "Global State & Client Routing", "topics": ["Zustand / Redux Toolkit", "React Router v6", "Dynamic Routes"], "practice": "Build multi-page E-Commerce app with Shopping Cart"},
+                    {"week": 12, "title": "API Integration & Form Management", "topics": ["Axios/TanStack Query", "React Hook Form", "Zod Validation"], "practice": "Connect React app to backend API"}
+                ],
+                "milestone_project": "Production E-Commerce Platform with Cart, Filters & API Integration",
+                "learning_resources": [
+                    {"title": "React Official Documentation", "url": "https://react.dev/", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 4,
+                "phase_title": "Next.js 14, SSR & Web Performance",
+                "duration_weeks": 4,
+                "skills_covered": ["Next.js App Router", "Server Components (RSC)", "Server Actions", "SEO & Core Web Vitals"],
+                "weekly_breakdown": [
+                    {"week": 13, "title": "Next.js App Router Architecture", "topics": ["Server Components", "Client Components", "Layouts", "Loading UI"], "practice": "Build Next.js blog application"},
+                    {"week": 14, "title": "SSR, SSG & ISR Rendering", "topics": ["Static Generation", "Server-Side Rendering", "Revalidation"], "practice": "Implement dynamic CMS rendering"},
+                    {"week": 15, "title": "Next.js Server Actions & API Routes", "topics": ["Server Actions", "Route Handlers", "Authentication"], "practice": "Implement user authentication in Next.js"},
+                    {"week": 16, "title": "Core Web Vitals & Optimization", "topics": ["Image Optimization", "Bundle Splitting", "SEO Metadata"], "practice": "Achieve 95+ Lighthouse score"}
+                ],
+                "milestone_project": "Full Stack Next.js SaaS Web Application with Authentication & Database",
+                "learning_resources": [
+                    {"title": "Next.js Documentation", "url": "https://nextjs.org/docs", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 5,
+                "phase_title": "Testing, CI/CD & Portfolio Prep",
+                "duration_weeks": 4,
+                "skills_covered": ["Jest & React Testing Library", "Playwright E2E", "GitHub Actions CI/CD", "Portfolio Showcase"],
+                "weekly_breakdown": [
+                    {"week": 17, "title": "Unit & Integration Testing", "topics": ["Jest", "React Testing Library", "Mocking APIs"], "practice": "Write test suite for React components"},
+                    {"week": 18, "title": "End-to-End Testing", "topics": ["Playwright", "User flow automation", "CI test runs"], "practice": "Create Playwright E2E test suite"},
+                    {"week": 19, "title": "CI/CD & Production Hosting", "topics": ["Vercel", "GitHub Actions", "Domain & SSL Setup"], "practice": "Automate build and deployment pipeline"},
+                    {"week": 20, "title": "Frontend Interview Preparation", "topics": ["JavaScript coding challenges", "React System Design", "Mock Interviews"], "practice": "Complete 3 frontend technical interview rounds"}
+                ],
+                "milestone_project": "Deployed Modern Frontend Portfolio with Tested Apps & Live Demos",
+                "learning_resources": [
+                    {"title": "Vercel Docs", "url": "https://vercel.com/docs", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            }
+        ]
+    },
+    "Cybersecurity Engineer": {
+        "description": "Master Networking, Linux Systems, Security Architecture, OWASP Top 10, Network Pentesting, SOC Operations, SIEM Tools, and Threat Intelligence.",
+        "prerequisites": "Basic computer hardware & networking awareness",
+        "weekly_hours": "10 - 15 hrs / week",
+        "career_outcomes": ["Cybersecurity Engineer", "Penetration Tester", "SOC Analyst", "Information Security Specialist"],
+        "phases": [
+            {
+                "phase_number": 1,
+                "phase_title": "Networking & Operating Systems Security",
+                "duration_weeks": 4,
+                "skills_covered": ["TCP/IP Stack", "Subnetting", "Wireshark", "Linux Administration", "Bash Scripting"],
+                "weekly_breakdown": [
+                    {"week": 1, "title": "Network Protocols & Architecture", "topics": ["OSI Model", "TCP/IP Stack", "DNS", "HTTP/HTTPS", "SSH"], "practice": "Capture and analyze network traffic in Wireshark"},
+                    {"week": 2, "title": "Linux Systems Administration", "topics": ["Permissions", "User Access Control", "Process Management", "Log Files"], "practice": "Configure secure Linux server environment"},
+                    {"week": 3, "title": "Bash & Python Scripting for Security", "topics": ["Automation", "File Manipulation", "Socket Programming"], "practice": "Write custom port scanner in Python"},
+                    {"week": 4, "title": "Firewalls & Port Scanning", "topics": ["Nmap", "UFW/IPTables", "Port Scanning Techniques"], "practice": "Perform network audit using Nmap"}
+                ],
+                "milestone_project": "Network Security Audit & Automated Port Scanner Script Suite",
+                "learning_resources": [
+                    {"title": "TryHackMe Networking Fundamentals", "url": "https://tryhackme.com/", "type": "PRACTICE", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 2,
+                "phase_title": "Web Application Security & OWASP",
+                "duration_weeks": 4,
+                "skills_covered": ["OWASP Top 10", "SQL Injection", "XSS & CSRF", "Burp Suite", "API Security"],
+                "weekly_breakdown": [
+                    {"week": 5, "title": "Burp Suite & HTTP Inspection", "topics": ["Proxy configuration", "Request interception", "Repeater"], "practice": "Inspect HTTP headers and parameters"},
+                    {"week": 6, "title": "SQL Injection & Database Attacks", "topics": ["Union-based SQLi", "Blind SQLi", "Mitigation & Parameterized Queries"], "practice": "Solve 10 SQLi challenges on PortSwigger Web Security Academy"},
+                    {"week": 7, "title": "Cross-Site Scripting (XSS) & CSRF", "topics": ["Reflected XSS", "Stored XSS", "DOM XSS", "CSRF Tokens"], "practice": "Exploit and remediate XSS vulnerabilities"},
+                    {"week": 8, "title": "Authentication & Authorization Bypasses", "topics": ["Session Management", "JWT Weaknesses", "IDOR Vulnerabilities"], "practice": "Perform IDOR security assessment"}
+                ],
+                "milestone_project": "Comprehensive Web Application Penetration Test Report on Vulnerable Target",
+                "learning_resources": [
+                    {"title": "PortSwigger Web Security Academy", "url": "https://portswigger.net/web-security", "type": "PRACTICE", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 3,
+                "phase_title": "System Pentesting, Vulnerability Assessment & Exploitation",
+                "duration_weeks": 4,
+                "skills_covered": ["Metasploit", "Privilege Escalation", "Active Directory Security", "Reverse Shells"],
+                "weekly_breakdown": [
+                    {"week": 9, "title": "Vulnerability Scanning & Nessus", "topics": ["Vulnerability assessment", "CVE Database", "CVSS Scoring"], "practice": "Run system scan and generate vulnerability report"},
+                    {"week": 10, "title": "Exploitation with Metasploit Framework", "topics": ["Msfconsole", "Payloads", "Exploit modules", "Listeners"], "practice": "Exploit known vulnerable service in lab environment"},
+                    {"week": 11, "title": "Linux & Windows Privilege Escalation", "topics": ["SUID binaries", "Sudo abuse", "Unquoted Service Paths"], "practice": "Escalate privileges from user to root/admin"},
+                    {"week": 12, "title": "Active Directory Fundamentals", "topics": ["Domain Controllers", "Kerberos", "BloodHound", "Pass-the-Hash"], "practice": "Map AD relationships using BloodHound"}
+                ],
+                "milestone_project": "Complete Network Capture-The-Flag (CTF) Box Machine Exploitation Report",
+                "learning_resources": [
+                    {"title": "Hack The Box Academy", "url": "https://academy.hackthebox.com/", "type": "PRACTICE", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 4,
+                "phase_title": "Defensive Security, SOC & Incident Response",
+                "duration_weeks": 4,
+                "skills_covered": ["SIEM Tools (Splunk/Elastic)", "Log Analysis", "Threat Hunting", "Incident Response"],
+                "weekly_breakdown": [
+                    {"week": 13, "title": "SIEM Configuration & Splunk", "topics": ["Log Ingestion", "SPL Queries", "Creating Alerts & Dashboards"], "practice": "Create Splunk alert rule for brute-force logins"},
+                    {"week": 14, "title": "Log Analysis & Digital Forensics", "topics": ["Sysmon logs", "Windows Event IDs", "Memory Analysis (Volatility)"], "practice": "Investigate compromised disk image"},
+                    {"week": 15, "title": "Threat Intelligence & MITRE ATT&CK", "topics": ["ATT&CK Matrix", "IOCs (Indicators of Compromise)", "YARA Rules"], "practice": "Map attack scenario to MITRE ATT&CK framework"},
+                    {"week": 16, "title": "Incident Handling & Playbooks", "topics": ["Containment", "Eradication", "Post-Incident Reporting"], "practice": "Draft Incident Response Playbook"}
+                ],
+                "milestone_project": "SOC Monitoring Dashboard & Incident Response Playbook",
+                "learning_resources": [
+                    {"title": "Splunk Free Education", "url": "https://www.splunk.com/en_us/training.html", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            },
+            {
+                "phase_number": 5,
+                "phase_title": "Security Certifications & Professional Prep",
+                "duration_weeks": 4,
+                "skills_covered": ["Security+ / EJPT Prep", "Cybersecurity Interviewing", "Report Writing", "Job Placement"],
+                "weekly_breakdown": [
+                    {"week": 17, "title": "Industry Certifications Prep", "topics": ["CompTIA Security+", "eJPT", "PJPT exam objectives"], "practice": "Complete 3 practice certification exams"},
+                    {"week": 18, "title": "Professional Penetration Testing Reports", "topics": ["Executive Summaries", "Risk Matrix", "Remediation Steps"], "practice": "Publish polished penetration testing report"},
+                    {"week": 19, "title": "GitHub Portfolio & Lab Writeups", "topics": ["Documenting CTF walkthroughs", "Security tool development"], "practice": "Publish GitHub repository of security tools"},
+                    {"week": 20, "title": "Cybersecurity Technical Interviews", "topics": ["Security Scenario Questions", "Live Coding / Analysis", "Mock Interviews"], "practice": "Complete 3 mock security interviews"}
+                ],
+                "milestone_project": "Professional Security Audit Portfolio & Certified Security Resume",
+                "learning_resources": [
+                    {"title": "OWASP Official Website", "url": "https://owasp.org/", "type": "DOCUMENTATION", "badge": "FREE"}
+                ]
+            }
+        ]
     }
 }
 
-
 def generate_dynamic_curriculum(career: str) -> Dict[str, Any]:
-    """Generates a structured, career-specific fallback curriculum for unlisted careers."""
     clean_career = career.strip().title()
     return {
         "description": f"Master foundational concepts, core specialized frameworks, practical projects, and professional job preparation tailored specifically for {clean_career}.",
@@ -478,8 +467,7 @@ def generate_dynamic_curriculum(career: str) -> Dict[str, Any]:
                 ],
                 "milestone_project": f"Foundational {clean_career} CLI Utility & Exercise Suite",
                 "learning_resources": [
-                    {"title": f"Official {clean_career} Documentation", "url": "https://google.com", "type": "DOCUMENTATION", "badge": "FREE"},
-                    {"title": "freeCodeCamp", "url": "https://www.freecodecamp.org/", "type": "COURSE", "badge": "FREE"}
+                    {"title": f"Official {clean_career} Documentation", "url": "https://google.com", "type": "DOCUMENTATION", "badge": "FREE"}
                 ]
             },
             {
@@ -549,12 +537,9 @@ def generate_dynamic_curriculum(career: str) -> Dict[str, Any]:
         ]
     }
 
-
 def generate_roadmap(target_career: str, duration: str = "6-month", level: str = "Beginner") -> Dict[str, Any]:
-    # Lookup in explicit templates or generate dynamic curriculum
     template = CAREER_CURRICULUM_TEMPLATES.get(target_career)
     if not template:
-        # Check alias keys
         for key, t in CAREER_CURRICULUM_TEMPLATES.items():
             if key.lower() in target_career.lower() or target_career.lower() in key.lower():
                 template = t
@@ -564,7 +549,6 @@ def generate_roadmap(target_career: str, duration: str = "6-month", level: str =
         template = generate_dynamic_curriculum(target_career)
 
     phases = template["phases"]
-    # Filter or scale phases based on requested duration
     if duration == "30-day":
         phases = phases[:2]
     elif duration == "3-month":
@@ -574,9 +558,9 @@ def generate_roadmap(target_career: str, duration: str = "6-month", level: str =
         "target_career": target_career,
         "duration": duration,
         "level": level,
-        "overview": template.get("description", f"Comprehensive career roadmap for {target_career}."),
-        "prerequisites": template.get("prerequisites", "Basic computer literacy"),
-        "weekly_hours": template.get("weekly_hours", "10 - 15 hrs / week"),
-        "career_outcomes": template.get("career_outcomes", [target_career]),
+        "overview": template["description"],
+        "prerequisites": template["prerequisites"],
+        "weekly_hours": template["weekly_hours"],
+        "career_outcomes": template["career_outcomes"],
         "phases": phases
     }

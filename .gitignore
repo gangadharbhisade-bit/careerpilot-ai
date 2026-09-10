@@ -16,3 +16,5 @@ careerpilot.db
 *.db
 
 .vscode/
+.env.example
+venv/
